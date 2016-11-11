@@ -1,17 +1,17 @@
 version: "2"
 services:
     web:
-        container_name: mean
+        container_name: teddygram-api 
         build: 
-            context: $PWD/mean
+            context: $PWD/containers/api/
             dockerfile: Dockerfile
-        image: teddygram-be
+        image: teddygram-api
         links:
             - mongo
         depends_on:
             - mongo
         volumes:
-            - $PWD/containers/mean/teddygram-be:/var/www
+            - $PWD/containers/api/src:/var/www
         ports:
             - "8080:8080"
     mongo:
