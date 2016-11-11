@@ -1,4 +1,4 @@
-# teddygram-be
+# Teddygram-api
 
 [Teddygram] -- the latest and greatest open source attempt at an Instagram clone.
 
