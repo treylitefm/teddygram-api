@@ -4,7 +4,7 @@ services:
         container_name: teddygram-api 
         build: 
             context: $PWD/containers/api/
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile-Dev
         image: teddygram-api
         links:
             - mongo

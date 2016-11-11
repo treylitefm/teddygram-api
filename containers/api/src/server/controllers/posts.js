@@ -35,14 +35,14 @@
                 var idx = post.likes.indexOf(req.body.post)
 
                 if (idx < 0) {
-                    post.likes.push(req.body.user))
+                    post.likes.push(req.body.user)
                 } else {
                     post.likess.splice(idx, 1)
                 }
 
                 post.save(function(err) {
                     res.json(err || post)
-                }
+                })
             })
         
         }
