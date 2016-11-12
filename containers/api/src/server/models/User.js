@@ -32,6 +32,10 @@
             type: String,
             enum: ['Male', 'Female']
         },
+        profile_pic: {
+            type: String,
+            trim: true
+        },
         posts: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Post'
